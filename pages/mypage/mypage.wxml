@@ -1,0 +1,54 @@
+<!-- <view class="userInfo">
+  <open-data type="userAvatarUrl" class="userImg"></open-data>
+  <open-data type="userNickName" class="userTitle"></open-data>
+</view> -->
+<!-- <view class="answerList">
+  <view wx:for="{{tableList}}" wx:key='index'>
+    <view class="item">
+      <image class="images" src="{{item.questionImg}}"></image>
+      <view class="item-right" data-item="{{item}}" bindtap="gotoDetail">
+        <view class="item-title">{{item.questionTitle}}</view>
+        <view class="item-desc">{{item.questionDesc}}</view>
+        <view class="item-desc">参与人数:{{item.joinCount}}人</view>
+      </view>
+    </view>
+  </view>
+</view> -->
+
+<view class="cu-bar bg-white solid-bottom margin-top padding justify-center">
+      <view class="userInfo">
+        <open-data type="userAvatarUrl" class="userImg"></open-data>
+        <open-data type="userNickName" class="userTitle"></open-data>
+      </view>
+</view>
+
+
+<view class="cu-form-group">
+  <view class='title'>年级</view>
+  <text class='text-grey'>{{userinfo.grade}}</text>
+</view>
+<view class="cu-form-group">
+  <view class='title'>班级</view>
+  <text class='text-grey'>{{userinfo.classes}}</text>
+</view>
+
+<view class="cu-form-group">
+  <view class='title'>昵称</view>
+  <text class='text-grey'>{{userinfo.name}}</text>
+</view>
+<view class="cu-form-group">
+  <view class='title'>账号</view>
+  <text class='text-grey'>{{userinfo.stuid}}</text>
+</view>
+<view class="cu-form-group">
+  <view class='title'>性别</view>
+  <text class='text-grey'>{{userinfo.sex}}</text>
+</view>
+<view class="cu-form-group">
+  <view class='title'>年龄</view>
+  <text class='text-grey'>{{userinfo.age}}</text>
+</view>
+<view class="solid-top cu-bar bg-white padding flex flex-direction">
+    <button class='cu-btn bg-red lg btn' bindtap='toMyinfo'>修改资料</button>
+    <button class='cu-btn bg-grey lg btn margin-top' bindtap='#'>解除绑定</button>
+</view>

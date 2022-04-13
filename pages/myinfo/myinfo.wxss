@@ -1,0 +1,6 @@
+/* pages/myinfo/myinfo.wxss */
+.btn{
+  width: 100%!important;
+  /* background-color: #6ECEB0; */
+  /* color: #FFF; */
+}

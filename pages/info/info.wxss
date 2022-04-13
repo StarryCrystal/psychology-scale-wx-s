@@ -1,0 +1,10 @@
+/* pages/info/info.wxss */
+.btn{
+  width: 100%!important;
+}
+.title-info{
+    flex: 1;
+    font-size: 30rpx;
+    color: #555!important;
+    padding-right: 20rpx;
+}

@@ -1,0 +1,24 @@
+
+<view class="cu-custom">
+  <view class="bg-img bg-mask padding-tb-xl" style="background-image: url('{{imgData}}')">
+    <view class='padding-xl text-white'>
+      <view class='padding-xs text-xl'>
+        欢迎访问青苗心理测评系统
+        <!-- Version 3.20-REL  -->
+      </view>
+    </view>
+  </view>
+  <view class="padding flex flex-direction">
+    <view class="item cu-btn bg-green lg margin-tb-sm" wx:for="{{tableList}}" wx:key='index'>
+    <!-- 左侧图片 -->
+    <!-- <image class="images" src="../../images/avuser.jpg"></image> -->
+    <!-- <image class="images" src="{{item.questionImg}}"></image> -->
+    <!--右侧 问卷信息 -->
+    <view class="item-right" data-questionId="{{item.questionId}}" bindtap="gotoDetail">
+      <view class="item-title">{{item.questionTitle}}</view>
+      <!-- <view class="item-desc">{{item.questionDesc}}</view> -->
+      <!-- <view class="item-join">参与人数:{{item.joinCount}}</view> -->
+    </view>
+  </view>
+  </view>
+</view>

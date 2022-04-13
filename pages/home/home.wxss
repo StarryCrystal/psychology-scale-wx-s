@@ -1,0 +1,51 @@
+/* 首页样式 */
+.homecontainer{
+  height: 100%;
+   /* display: flex: 把一个容器变成一个弹性盒子模型
+   1.子元素会默认水平排列
+   2.如果容器不是弹性盒子模型，子元素默认竖直排列
+   */
+  display: flex;
+  /* flex-direction: 决定子元素是水平排列还是竖直排列; */
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.item{
+  display: flex;
+  /* padding: 50rpx 20rpx; */
+  align-items: center;
+  height: 100rpx!important;
+  border-bottom: 1px solid #e8eaec;
+}
+.images{
+  width: 70rpx;
+  height: 70rpx;
+  border: 1px solid #e8eaec;
+  border-radius: 50%;
+}
+.item-right{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding-left: 15rpx;
+}
+.item-title{
+  font-size: 36rpx;
+  color: #fff;
+}
+.item-desc{
+  padding-top: 15rpx;
+  font-size: 28rpx;
+  color: #666666;
+  display:-webkit-box;
+  -webkit-line-clamp:1;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  -webkit-box-orient:vertical;
+  word-break:break-all;
+}
+.item-join{
+  padding-top: 15rpx;
+  font-size: 28rpx;
+  color: #666666;
+}

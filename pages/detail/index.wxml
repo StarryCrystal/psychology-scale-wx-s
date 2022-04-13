@@ -1,0 +1,15 @@
+<!--问卷详情页-->
+<view class="cu-bar bg-white solid-bottom">
+  <view class='action'>
+    <text class='cuIcon-title text-green' wx:if="{{status == '0'}}"></text>
+    <text class='cuIcon-title text-gray' wx:if="{{status == '1'}}"></text>{{questionTitle}}
+  </view>
+</view>
+<block>
+  <view class='padding bg-white'>
+    <view class='text-left padding' style="text-indent: 2em;">{{questionDesc}}</view>
+    <button class='cu-btn block bg-green margin-tb-sm lg btn' wx:if="{{status == '0'}}" data-questionId="{{questionId}}" bindtap="gotoAnswer">开始测试</button>
+    <button class='cu-btn bg-grey lg btn' bindtap="hasAnswer" wx:if="{{status == '1'}}">您已提交测试</button>
+    <button class='cu-btn bg-grey lg btn' bindtap="notOpen" wx:if="{{status == '3'}}">该问卷暂未开放</button>
+    </view>
+</block>

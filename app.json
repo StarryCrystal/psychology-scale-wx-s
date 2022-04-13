@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/home/home",
+    "pages/mypage/mypage",
+    "pages/index/index",
+    "pages/detail/index",
+    "pages/answer/index",
+    "pages/logs/logs",
+    "pages/myanswer/index",
+    "pages/myinfo/myinfo",
+    "pages/error/error"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "青苗心理测评系统",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#6ECEB0",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/home.png",
+        "selectedIconPath": "/images/home_select.png"
+      },
+      {
+        "pagePath": "pages/mypage/mypage",
+        "text": "我的",
+        "iconPath": "/images/my.png",
+        "selectedIconPath": "/images/my_select.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
